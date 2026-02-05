@@ -30,49 +30,86 @@ ENV/
 env.bak/
 venv.bak/
 
-# ML Models and Data
-ml-model/models/*.joblib
-ml-model/models/*.pkl
-ml-model/models/*.h5
+# ML Models and Artifacts (exclude large model files)
+ml-model/training/models/*.joblib
+ml-model/training/models/*.pkl
+ml-model/training/models/*.h5
+ml-model/training/models/*.model
+*.joblib
+*.pkl
+
+# Training Data (may be large)
 ml-model/data/*.db
 ml-model/data/*.csv
 ml-model/data/raw/
 ml-model/data/processed/
+ml-model/data/training/
 
-# Logs
+# Logs and Monitoring
 *.log
 logs/
 ml-model/evaluation/logs/
+ml-model/continuous_learning/logs/
 
-# Configuration
+# Configuration with secrets
 config/secrets.json
 config/api_keys.json
+config/production.json
 .env.local
+.env.production
 
-# IDEs
+# IDEs and Editors
 .vscode/
 .idea/
 *.swp
 *.swo
+.sublime-project
+.sublime-workspace
 
-# OS
+# OS Files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
 
 # Jupyter Notebooks
 .ipynb_checkpoints
+*.ipynb
 
-# pytest
+# Testing
 .pytest_cache/
 .coverage
+htmlcov/
+.tox/
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
 
 # FastAPI
 .pytest_cache
 
 # Streamlit
-.streamlit/
+.streamlit/secrets.toml
 
 # Temporary files
 tmp/
 temp/
 *.tmp
+
+# Database files (may contain sensitive data)
+*.sqlite3
+*.db
+
+# Model experiment tracking (if using MLflow, Weights & Biases, etc.)
+mlruns/
+wandb/
+.neptune/
+
+# Docker
+Dockerfile.local
+docker-compose.override.yml

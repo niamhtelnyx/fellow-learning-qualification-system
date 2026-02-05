@@ -1,3 +1,6 @@
+# Fellow Learning Qualification System Dependencies
+# ML Team: Core machine learning and data science packages
+
 # Core ML Dependencies
 pandas>=1.3.0
 numpy>=1.21.0
@@ -5,26 +8,30 @@ scikit-learn>=1.0.0
 xgboost>=1.5.0
 joblib>=1.1.0
 
-# API Dependencies
+# API Dependencies for Real-time Scoring
 fastapi>=0.70.0
 uvicorn>=0.15.0
 pydantic>=1.8.0
 requests>=2.25.0
 
-# Dashboard Dependencies  
+# Dashboard and Visualization
 streamlit>=1.12.0
 plotly>=5.0.0
+matplotlib>=3.5.0
+seaborn>=0.11.0
 
-# Development Dependencies
+# Data Processing and Analysis
+sqlite3  # Usually included with Python
+python-dateutil>=2.8.0
+tqdm>=4.60.0
+
+# Development and Testing
 pytest>=6.0.0
 jupyter>=1.0.0
 black>=21.0.0
 flake8>=3.8.0
 
-# Database
-sqlite3
-psycopg2-binary>=2.8.0
-
-# Utilities
-python-dateutil>=2.8.0
-tqdm>=4.60.0
+# Deployment (Optional for production)
+docker>=5.0.0
+gunicorn>=20.0.0
+psycopg2-binary>=2.8.0  # For PostgreSQL in production
