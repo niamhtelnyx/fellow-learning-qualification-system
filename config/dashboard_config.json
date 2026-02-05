@@ -1,0 +1,11 @@
+{
+  "title": "Fellow Learning Qualification Dashboard",
+  "refresh_interval_seconds": 300,
+  "default_days_back": 30,
+  "performance_thresholds": {
+    "accuracy_target": 0.85,
+    "accuracy_warning": 0.75,
+    "precision_target": 0.8,
+    "recall_target": 0.7
+  }
+}

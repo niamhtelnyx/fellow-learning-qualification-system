@@ -1,0 +1,14 @@
+{
+  "retrain_frequency_days": 7,
+  "drift_check_frequency_days": 1,
+  "min_training_samples": 10,
+  "performance_thresholds": {
+    "accuracy_threshold": 0.75,
+    "decline_threshold": 0.1
+  },
+  "feature_engineering": {
+    "max_text_features": 100,
+    "min_df": 2,
+    "max_df": 0.8
+  }
+}
