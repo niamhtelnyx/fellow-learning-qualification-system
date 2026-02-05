@@ -1,0 +1,125 @@
+{
+  "fellow_automation_config": {
+    "version": "1.0.0",
+    "created": "2026-02-06",
+    "description": "Configuration for Fellow.ai learning qualification automation system",
+    
+    "api_endpoints": {
+      "fellow_api": {
+        "base_url": "https://api.fellow.app/v1",
+        "endpoint": "https://telnyx.fellow.app/api/v1/recordings",
+        "api_key_env": "FELLOW_API_KEY",
+        "timeout": 30,
+        "max_retries": 3
+      },
+      "clearbit": {
+        "base_url": "https://company.clearbit.com/v2",
+        "api_key_env": "CLEARBIT_API_KEY",
+        "rate_limit_per_hour": 600
+      },
+      "openfunnel": {
+        "base_url": "https://api.openfunnel.com/v1",
+        "api_key_env": "OPENFUNNEL_API_KEY", 
+        "rate_limit_per_hour": 100
+      }
+    },
+    
+    "data_pipeline": {
+      "ingestion": {
+        "default_date_range_days": 7,
+        "min_sentiment_threshold": 5,
+        "batch_size": 50
+      },
+      "enrichment": {
+        "batch_size": 10,
+        "high_priority_threshold": 8,
+        "max_error_retries": 3,
+        "rate_limit_delay_seconds": 1
+      },
+      "scoring": {
+        "min_confidence_threshold": 0.7,
+        "high_value_threshold": 80,
+        "scoring_window_hours": 24
+      }
+    },
+    
+    "model_training": {
+      "min_training_samples": 50,
+      "test_split_ratio": 0.2,
+      "cross_validation_folds": 5,
+      "model_backup_count": 5,
+      "retraining_schedule": "weekly"
+    },
+    
+    "monitoring": {
+      "health_check_interval_hours": 4,
+      "data_freshness_warning_hours": 24,
+      "data_freshness_critical_hours": 48,
+      "disk_usage_warning_percent": 85,
+      "disk_usage_critical_percent": 95,
+      "error_rate_warning_percent": 25,
+      "error_rate_critical_percent": 50
+    },
+    
+    "maintenance": {
+      "log_retention_days": 30,
+      "compressed_log_retention_days": 90,
+      "database_backup_retention_days": 14,
+      "processing_log_retention_days": 90,
+      "health_check_retention_days": 30
+    },
+    
+    "cron_schedules": {
+      "daily_ingestion": "0 6 * * *",
+      "enrichment_processing": "30 9-17 * * 1-5",
+      "realtime_scoring": "0 9,11,13,15,17 * * 1-5",
+      "health_monitoring": "0 6,10,14,18,22 * * *",
+      "model_training": "0 2 * * 1",
+      "daily_cleanup": "0 3 * * *",
+      "log_rotation": "0 1 * * 0"
+    },
+    
+    "alerting": {
+      "enabled": true,
+      "channels": ["log", "database"],
+      "critical_alerts": [
+        "fellow_api_down",
+        "database_unavailable", 
+        "disk_space_critical",
+        "no_data_48h"
+      ],
+      "warning_alerts": [
+        "high_error_rate",
+        "data_aging",
+        "enrichment_failures",
+        "low_disk_space"
+      ]
+    },
+    
+    "feature_flags": {
+      "enable_clearbit_enrichment": true,
+      "enable_openfunnel_enrichment": false,
+      "enable_web_scraping": true,
+      "enable_ml_scoring": true,
+      "enable_fallback_scoring": true,
+      "enable_automatic_retraining": true,
+      "enable_health_monitoring": true
+    },
+    
+    "data_quality": {
+      "min_notes_length": 50,
+      "max_notes_length": 10000,
+      "required_fields": ["company_name", "notes", "ae_name", "date"],
+      "sentiment_score_range": [1, 10],
+      "company_name_blacklist": ["test", "unknown", "demo"]
+    },
+    
+    "performance": {
+      "database_connection_timeout": 5,
+      "api_request_timeout": 30,
+      "batch_processing_delay": 0.5,
+      "concurrent_enrichment_limit": 3,
+      "max_memory_usage_mb": 512
+    }
+  }
+}
