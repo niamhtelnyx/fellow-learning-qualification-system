@@ -1,0 +1,253 @@
+{
+  "run_id": "c2dcd65e-547f-4c1d-8fae-daa432f1b959",
+  "metrics": {
+    "total_leads": 2,
+    "successful_qualifications": 2,
+    "failed_qualifications": 0,
+    "high_value_leads_found": 1,
+    "scoring_confidence_avg": 85.0,
+    "enrichment_success_rate": 95.0,
+    "routing_success_rate": 100.0
+  },
+  "processed_results": [
+    {
+      "test_id": 9,
+      "company_name": "RealEstate AI Connect",
+      "log_id": "78b898a2-faca-49a1-9ad9-e641a02618cc",
+      "fellow_meeting_id": "rE4x9K2mL8",
+      "processing_results": {
+        "input_capture": {
+          "success": true,
+          "extracted_data": {
+            "company_name": "RealEstate AI Connect",
+            "ae_name": "Rachel Martinez",
+            "call_date": "2025-10-15",
+            "extraction_method": "test_data",
+            "data_quality_score": 95.0
+          },
+          "data_quality_score": 95.0
+        },
+        "business_intelligence": {
+          "success": true,
+          "business_intelligence": {
+            "call_context": "discovery",
+            "use_case": "Voice AI and automation; Real estate communication automation",
+            "products_discussed": [
+              "Voice API",
+              "Voice AI",
+              "Call Control",
+              "Voice Recording",
+              "Messaging Pro",
+              "Global IP Network"
+            ],
+            "ae_next_steps": null,
+            "company_blurb": "Call Title: Telnyx Intro Call - RealEstate AI Connect\n\nCall Notes: PropTech startup using AI voice assistants for automated property showing scheduling and lead qualification.",
+            "company_age": null,
+            "employee_count": null,
+            "business_type": "Startup",
+            "business_model": null
+          },
+          "extraction_confidence": 0.0
+        },
+        "enrichment": {
+          "success": true,
+          "enrichment_results": [
+            {
+              "success": true,
+              "provider": "clearbit",
+              "data": {
+                "domain": "realestateai.co",
+                "industry": "Real Estate Technology",
+                "employees": "25-35",
+                "description": "RealEstate AI Connect in Real Estate Technology"
+              },
+              "confidence_score": 85.0,
+              "response_time_ms": 150,
+              "cost_cents": 5
+            }
+          ],
+          "total_cost_cents": 5
+        },
+        "scoring": {
+          "success": true,
+          "final_score": 100,
+          "scoring_result": {
+            "final_score": 100,
+            "model_name": "enhanced_bi_scorer",
+            "model_version": "2.0",
+            "method": "bi_enhanced_rules",
+            "confidence": 85.0,
+            "features_used": {
+              "industry": "Real Estate Technology",
+              "voice_ai_signals": 5,
+              "business_signals": 5,
+              "business_intelligence_fields": 5
+            },
+            "score_adjustments": [
+              {
+                "reason": "voice_ai_use_case",
+                "adjustment": 15
+              },
+              {
+                "reason": "startup_bonus",
+                "adjustment": 10
+              },
+              {
+                "reason": "budget_mentioned",
+                "adjustment": 10
+              }
+            ]
+          }
+        },
+        "routing": {
+          "success": true,
+          "routing_decision": "AE_HANDOFF",
+          "priority": "HIGH",
+          "assigned_to": "Rachel Martinez",
+          "routing_data": {
+            "routing_decision": "AE_HANDOFF",
+            "assigned_to": "Rachel Martinez",
+            "priority_level": "HIGH",
+            "routing_confidence": 90.0,
+            "routing_engine": "enhanced_rules_v2",
+            "business_rules_applied": [
+              "score_threshold_ae_handoff",
+              "priority_mapping",
+              "assignment_logic"
+            ]
+          }
+        },
+        "outcome": {
+          "success": true,
+          "prediction_accurate": false,
+          "outcome_data": {
+            "outcome_type": "prediction",
+            "predicted_progression": true,
+            "prediction_accuracy": 60.0,
+            "expected_score_range": "82-88",
+            "actual_score": 100,
+            "expected_routing": "AE_HANDOFF",
+            "data_source": "test_validation"
+          }
+        }
+      },
+      "success": true
+    },
+    {
+      "test_id": 10,
+      "company_name": "QuickFix Home Services",
+      "log_id": "fe2ced5e-e8ac-402e-b428-aa2dfd96d18a",
+      "fellow_meeting_id": "qF7b3N1pY9",
+      "processing_results": {
+        "input_capture": {
+          "success": true,
+          "extracted_data": {
+            "company_name": "QuickFix Home Services",
+            "ae_name": "Mark Thompson",
+            "call_date": "2025-10-22",
+            "extraction_method": "test_data",
+            "data_quality_score": 95.0
+          },
+          "data_quality_score": 95.0
+        },
+        "business_intelligence": {
+          "success": true,
+          "business_intelligence": {
+            "call_context": "discovery",
+            "use_case": "Voice AI and automation; SMS and messaging; Voice calling",
+            "products_discussed": [
+              "SMS API",
+              "Voice AI",
+              "Call Control",
+              "Messaging Pro",
+              "Global IP Network",
+              "Cloud Communications"
+            ],
+            "ae_next_steps": null,
+            "company_blurb": "Family-owned business, cost-conscious, wants simple integration.",
+            "company_age": 2010,
+            "employee_count": null,
+            "business_type": null,
+            "business_model": "B2C"
+          },
+          "extraction_confidence": 0.0
+        },
+        "enrichment": {
+          "success": true,
+          "enrichment_results": [
+            {
+              "success": true,
+              "provider": "clearbit",
+              "data": {
+                "domain": "quickfixhome.net",
+                "industry": "Home Services/Logistics",
+                "employees": "8-12",
+                "description": "QuickFix Home Services in Home Services/Logistics"
+              },
+              "confidence_score": 85.0,
+              "response_time_ms": 150,
+              "cost_cents": 5
+            }
+          ],
+          "total_cost_cents": 5
+        },
+        "scoring": {
+          "success": true,
+          "final_score": 50,
+          "scoring_result": {
+            "final_score": 50,
+            "model_name": "enhanced_bi_scorer",
+            "model_version": "2.0",
+            "method": "bi_enhanced_rules",
+            "confidence": 85.0,
+            "features_used": {
+              "industry": "Home Services/Logistics",
+              "voice_ai_signals": 0,
+              "business_signals": 5,
+              "business_intelligence_fields": 6
+            },
+            "score_adjustments": [
+              {
+                "reason": "voice_ai_use_case",
+                "adjustment": 15
+              }
+            ]
+          }
+        },
+        "routing": {
+          "success": true,
+          "routing_decision": "NURTURE",
+          "priority": "LOW",
+          "assigned_to": "MARKETING_AUTOMATION",
+          "routing_data": {
+            "routing_decision": "NURTURE",
+            "assigned_to": "MARKETING_AUTOMATION",
+            "priority_level": "LOW",
+            "routing_confidence": 90.0,
+            "routing_engine": "enhanced_rules_v2",
+            "business_rules_applied": [
+              "score_threshold_nurture",
+              "priority_mapping",
+              "assignment_logic"
+            ]
+          }
+        },
+        "outcome": {
+          "success": true,
+          "prediction_accurate": false,
+          "outcome_data": {
+            "outcome_type": "prediction",
+            "predicted_progression": false,
+            "prediction_accuracy": 60.0,
+            "expected_score_range": "35-45",
+            "actual_score": 50,
+            "expected_routing": "SELF_SERVICE",
+            "data_source": "test_validation"
+          }
+        }
+      },
+      "success": true
+    }
+  ],
+  "timestamp": "2026-02-05_16-35-28"
+}

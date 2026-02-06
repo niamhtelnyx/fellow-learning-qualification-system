@@ -1,0 +1,1151 @@
+{
+  "run_id": "c2a02c46-8f60-4b71-90b4-9635ff491556",
+  "test_run": "complete_october_2025",
+  "total_tests": 10,
+  "metrics": {
+    "total_leads": 10,
+    "successful_qualifications": 10,
+    "failed_qualifications": 0,
+    "high_value_leads_found": 3,
+    "scoring_confidence_avg": 85.0,
+    "enrichment_success_rate": 95.0,
+    "routing_success_rate": 100.0
+  },
+  "processed_results": [
+    {
+      "test_id": 1,
+      "company_name": "Speaker (GSK Productions)",
+      "log_id": "026e112e-2671-4606-be14-5e772bc381e2",
+      "fellow_meeting_id": "fc_01_speaker(",
+      "processing_results": {
+        "input_capture": {
+          "success": true,
+          "extracted_data": {
+            "company_name": "Speaker (GSK Productions)",
+            "ae_name": "Matthew Zachrich",
+            "call_date": "2025-10-11",
+            "extraction_method": "test_data",
+            "data_quality_score": 95.0
+          },
+          "data_quality_score": 95.0
+        },
+        "business_intelligence": {
+          "success": true,
+          "business_intelligence": {
+            "call_context": "discovery",
+            "use_case": "Voice AI and automation; Voice calling; Communications APIs and CPaaS",
+            "products_discussed": [
+              "Voice API",
+              "Voice AI",
+              "Phone Numbers",
+              "Call Control",
+              "Voice Recording",
+              "Messaging Pro",
+              "Global IP Network",
+              "Cloud Communications"
+            ],
+            "ae_next_steps": null,
+            "company_blurb": "Call Title: Telnyx Intro Call (Gursharan Kohli)\n\nCall Notes: AI marketplace platform called Speaker where customers buy different AI agents (receptionist, sales, calling agents, accountants).",
+            "company_age": null,
+            "employee_count": null,
+            "business_type": null,
+            "business_model": "Platform"
+          },
+          "extraction_confidence": 0.0
+        },
+        "enrichment": {
+          "success": true,
+          "enrichment_results": [
+            {
+              "success": true,
+              "provider": "clearbit",
+              "data": {
+                "domain": "gskproductions.ca",
+                "industry": "AI/Voice Technology",
+                "employees": "5-15",
+                "description": "Speaker (GSK Productions) in AI/Voice Technology"
+              },
+              "confidence_score": 85.0,
+              "response_time_ms": 150,
+              "cost_cents": 5
+            }
+          ],
+          "total_cost_cents": 5
+        },
+        "scoring": {
+          "success": true,
+          "final_score": 90,
+          "scoring_result": {
+            "final_score": 90,
+            "model_name": "enhanced_bi_scorer",
+            "model_version": "2.0",
+            "method": "bi_enhanced_rules",
+            "confidence": 85.0,
+            "features_used": {
+              "industry": "AI/Voice Technology",
+              "voice_ai_signals": 4,
+              "business_signals": 3,
+              "business_intelligence_fields": 5
+            },
+            "score_adjustments": [
+              {
+                "reason": "voice_ai_signals",
+                "adjustment": 25
+              },
+              {
+                "reason": "voice_ai_use_case",
+                "adjustment": 15
+              }
+            ]
+          }
+        },
+        "routing": {
+          "success": true,
+          "routing_decision": "AE_HANDOFF",
+          "priority": "HIGH",
+          "assigned_to": "Matthew Zachrich",
+          "routing_data": {
+            "routing_decision": "AE_HANDOFF",
+            "assigned_to": "Matthew Zachrich",
+            "priority_level": "HIGH",
+            "routing_confidence": 90.0,
+            "routing_engine": "enhanced_rules_v2",
+            "business_rules_applied": [
+              "score_threshold_ae_handoff",
+              "priority_mapping",
+              "assignment_logic"
+            ]
+          }
+        },
+        "outcome": {
+          "success": true,
+          "prediction_accurate": true,
+          "outcome_data": {
+            "outcome_type": "prediction",
+            "predicted_progression": true,
+            "prediction_accuracy": 90.0,
+            "expected_score_range": "90-95",
+            "actual_score": 90,
+            "expected_routing": "AE_HANDOFF",
+            "data_source": "test_validation"
+          }
+        }
+      },
+      "success": true
+    },
+    {
+      "test_id": 2,
+      "company_name": "Case Pocket",
+      "log_id": "7c057960-cfec-470a-9167-563618cb7e00",
+      "fellow_meeting_id": "fc_02_casepock",
+      "processing_results": {
+        "input_capture": {
+          "success": true,
+          "extracted_data": {
+            "company_name": "Case Pocket",
+            "ae_name": "Josh Ornovitz",
+            "call_date": "2025-10-12",
+            "extraction_method": "test_data",
+            "data_quality_score": 95.0
+          },
+          "data_quality_score": 95.0
+        },
+        "business_intelligence": {
+          "success": true,
+          "business_intelligence": {
+            "call_context": "discovery",
+            "use_case": "Voice AI and automation; Communications APIs and CPaaS",
+            "products_discussed": [
+              "Voice API",
+              "Voice AI",
+              "SIP Trunking",
+              "Call Control",
+              "Voice Recording",
+              "Global IP Network",
+              "Cloud Communications"
+            ],
+            "ae_next_steps": null,
+            "company_blurb": "Call Title: Telnyx Intro Call (Chuck East)\n\nCall Notes: Legal intake platform using voice AI agents as intelligent dynamic forms for law firms.",
+            "company_age": null,
+            "employee_count": null,
+            "business_type": null,
+            "business_model": "Platform"
+          },
+          "extraction_confidence": 0.0
+        },
+        "enrichment": {
+          "success": true,
+          "enrichment_results": [
+            {
+              "success": true,
+              "provider": "clearbit",
+              "data": {
+                "domain": "casepocket.com",
+                "industry": "Legal Technology",
+                "employees": "3-8",
+                "description": "Case Pocket in Legal Technology"
+              },
+              "confidence_score": 85.0,
+              "response_time_ms": 150,
+              "cost_cents": 5
+            }
+          ],
+          "total_cost_cents": 5
+        },
+        "scoring": {
+          "success": true,
+          "final_score": 90,
+          "scoring_result": {
+            "final_score": 90,
+            "model_name": "enhanced_bi_scorer",
+            "model_version": "2.0",
+            "method": "bi_enhanced_rules",
+            "confidence": 85.0,
+            "features_used": {
+              "industry": "Legal Technology",
+              "voice_ai_signals": 3,
+              "business_signals": 3,
+              "business_intelligence_fields": 5
+            },
+            "score_adjustments": [
+              {
+                "reason": "voice_ai_signals",
+                "adjustment": 25
+              },
+              {
+                "reason": "voice_ai_use_case",
+                "adjustment": 15
+              }
+            ]
+          }
+        },
+        "routing": {
+          "success": true,
+          "routing_decision": "AE_HANDOFF",
+          "priority": "HIGH",
+          "assigned_to": "Josh Ornovitz",
+          "routing_data": {
+            "routing_decision": "AE_HANDOFF",
+            "assigned_to": "Josh Ornovitz",
+            "priority_level": "HIGH",
+            "routing_confidence": 90.0,
+            "routing_engine": "enhanced_rules_v2",
+            "business_rules_applied": [
+              "score_threshold_ae_handoff",
+              "priority_mapping",
+              "assignment_logic"
+            ]
+          }
+        },
+        "outcome": {
+          "success": true,
+          "prediction_accurate": true,
+          "outcome_data": {
+            "outcome_type": "prediction",
+            "predicted_progression": true,
+            "prediction_accuracy": 90.0,
+            "expected_score_range": "85-92",
+            "actual_score": 90,
+            "expected_routing": "AE_HANDOFF",
+            "data_source": "test_validation"
+          }
+        }
+      },
+      "success": true
+    },
+    {
+      "test_id": 3,
+      "company_name": "Gold Level Marketing (SMS Blast)",
+      "log_id": "67042a97-de44-43c9-bbbe-3962727e60e4",
+      "fellow_meeting_id": "fc_03_goldleve",
+      "processing_results": {
+        "input_capture": {
+          "success": true,
+          "extracted_data": {
+            "company_name": "Gold Level Marketing (SMS Blast)",
+            "ae_name": "Alrazi Bashir",
+            "call_date": "2025-10-13",
+            "extraction_method": "test_data",
+            "data_quality_score": 95.0
+          },
+          "data_quality_score": 95.0
+        },
+        "business_intelligence": {
+          "success": true,
+          "business_intelligence": {
+            "call_context": "discovery",
+            "use_case": "SMS and messaging; Communications APIs and CPaaS",
+            "products_discussed": [
+              "SMS API",
+              "Voice AI",
+              "Call Control",
+              "Global IP Network",
+              "Cloud Communications"
+            ],
+            "ae_next_steps": null,
+            "company_blurb": "Call Title: Telnyx Intro Call (Esmeralda Portillo)\n\nCall Notes: Established marketing agency (11 years) with SMS platform.",
+            "company_age": null,
+            "employee_count": null,
+            "business_type": null,
+            "business_model": "Platform"
+          },
+          "extraction_confidence": 0.0
+        },
+        "enrichment": {
+          "success": true,
+          "enrichment_results": [
+            {
+              "success": true,
+              "provider": "clearbit",
+              "data": {
+                "domain": "smsblastio.com",
+                "industry": "Digital Marketing/SMS Platform",
+                "employees": "15-25",
+                "description": "Gold Level Marketing (SMS Blast) in Digital Marketing/SMS Platform"
+              },
+              "confidence_score": 85.0,
+              "response_time_ms": 150,
+              "cost_cents": 5
+            }
+          ],
+          "total_cost_cents": 5
+        },
+        "scoring": {
+          "success": true,
+          "final_score": 50,
+          "scoring_result": {
+            "final_score": 50,
+            "model_name": "enhanced_bi_scorer",
+            "model_version": "2.0",
+            "method": "bi_enhanced_rules",
+            "confidence": 85.0,
+            "features_used": {
+              "industry": "Digital Marketing/SMS Platform",
+              "voice_ai_signals": 0,
+              "business_signals": 3,
+              "business_intelligence_fields": 5
+            },
+            "score_adjustments": []
+          }
+        },
+        "routing": {
+          "success": true,
+          "routing_decision": "NURTURE",
+          "priority": "LOW",
+          "assigned_to": "MARKETING_AUTOMATION",
+          "routing_data": {
+            "routing_decision": "NURTURE",
+            "assigned_to": "MARKETING_AUTOMATION",
+            "priority_level": "LOW",
+            "routing_confidence": 90.0,
+            "routing_engine": "enhanced_rules_v2",
+            "business_rules_applied": [
+              "score_threshold_nurture",
+              "priority_mapping",
+              "assignment_logic"
+            ]
+          }
+        },
+        "outcome": {
+          "success": true,
+          "prediction_accurate": false,
+          "outcome_data": {
+            "outcome_type": "prediction",
+            "predicted_progression": false,
+            "prediction_accuracy": 60.0,
+            "expected_score_range": "70-78",
+            "actual_score": 50,
+            "expected_routing": "AE_HANDOFF",
+            "data_source": "test_validation"
+          }
+        }
+      },
+      "success": true
+    },
+    {
+      "test_id": 4,
+      "company_name": "VoiceFlow Enterprise",
+      "log_id": "f70a386c-f7b8-497a-bac8-b49b5e5ab1d2",
+      "fellow_meeting_id": "fc_04_voiceflo",
+      "processing_results": {
+        "input_capture": {
+          "success": true,
+          "extracted_data": {
+            "company_name": "VoiceFlow Enterprise",
+            "ae_name": "Sarah Kim",
+            "call_date": "2025-10-14",
+            "extraction_method": "test_data",
+            "data_quality_score": 95.0
+          },
+          "data_quality_score": 95.0
+        },
+        "business_intelligence": {
+          "success": true,
+          "business_intelligence": {
+            "call_context": "discovery",
+            "use_case": "Voice AI and automation; Communications APIs and CPaaS",
+            "products_discussed": [
+              "Voice API",
+              "Voice AI",
+              "Call Control",
+              "Voice Recording",
+              "Messaging Pro",
+              "Global IP Network",
+              "Cloud Communications"
+            ],
+            "ae_next_steps": null,
+            "company_blurb": "Call Title: Telnyx Intro Call - VoiceFlow Enterprise\n\nCall Notes: Enterprise conversational AI platform serving Fortune 500 customers.",
+            "company_age": null,
+            "employee_count": "500+",
+            "business_type": "Enterprise",
+            "business_model": "Platform"
+          },
+          "extraction_confidence": 0.0
+        },
+        "enrichment": {
+          "success": true,
+          "enrichment_results": [
+            {
+              "success": true,
+              "provider": "clearbit",
+              "data": {
+                "domain": "voiceflow.com",
+                "industry": "Conversational AI Platform",
+                "employees": "100-150",
+                "description": "VoiceFlow Enterprise in Conversational AI Platform"
+              },
+              "confidence_score": 85.0,
+              "response_time_ms": 150,
+              "cost_cents": 5
+            }
+          ],
+          "total_cost_cents": 5
+        },
+        "scoring": {
+          "success": true,
+          "final_score": 65,
+          "scoring_result": {
+            "final_score": 65,
+            "model_name": "enhanced_bi_scorer",
+            "model_version": "2.0",
+            "method": "bi_enhanced_rules",
+            "confidence": 85.0,
+            "features_used": {
+              "industry": "Conversational AI Platform",
+              "voice_ai_signals": 3,
+              "business_signals": 3,
+              "business_intelligence_fields": 7
+            },
+            "score_adjustments": [
+              {
+                "reason": "voice_ai_use_case",
+                "adjustment": 15
+              }
+            ]
+          }
+        },
+        "routing": {
+          "success": true,
+          "routing_decision": "SDR_FOLLOWUP",
+          "priority": "MEDIUM",
+          "assigned_to": "SDR_TEAM",
+          "routing_data": {
+            "routing_decision": "SDR_FOLLOWUP",
+            "assigned_to": "SDR_TEAM",
+            "priority_level": "MEDIUM",
+            "routing_confidence": 90.0,
+            "routing_engine": "enhanced_rules_v2",
+            "business_rules_applied": [
+              "score_threshold_sdr_followup",
+              "priority_mapping",
+              "assignment_logic"
+            ]
+          }
+        },
+        "outcome": {
+          "success": true,
+          "prediction_accurate": false,
+          "outcome_data": {
+            "outcome_type": "prediction",
+            "predicted_progression": false,
+            "prediction_accuracy": 60.0,
+            "expected_score_range": "93-97",
+            "actual_score": 65,
+            "expected_routing": "AE_HANDOFF",
+            "data_source": "test_validation"
+          }
+        }
+      },
+      "success": true
+    },
+    {
+      "test_id": 5,
+      "company_name": "Mom's Pizza Corner",
+      "log_id": "74efb09b-178f-4843-89b6-74132f3e42b1",
+      "fellow_meeting_id": "fc_05_mom'spiz",
+      "processing_results": {
+        "input_capture": {
+          "success": true,
+          "extracted_data": {
+            "company_name": "Mom's Pizza Corner",
+            "ae_name": "Chris Johnson",
+            "call_date": "2025-10-15",
+            "extraction_method": "test_data",
+            "data_quality_score": 95.0
+          },
+          "data_quality_score": 95.0
+        },
+        "business_intelligence": {
+          "success": true,
+          "business_intelligence": {
+            "call_context": "discovery",
+            "use_case": "SMS and messaging; Communications APIs and CPaaS",
+            "products_discussed": [
+              "SMS API",
+              "Call Control",
+              "Global IP Network",
+              "Cloud Communications"
+            ],
+            "ae_next_steps": null,
+            "company_blurb": "Chris Johnson: That sounds like a great use case for our platform.",
+            "company_age": null,
+            "employee_count": null,
+            "business_type": null,
+            "business_model": "Platform"
+          },
+          "extraction_confidence": 0.0
+        },
+        "enrichment": {
+          "success": true,
+          "enrichment_results": [
+            {
+              "success": true,
+              "provider": "clearbit",
+              "data": {
+                "domain": "momspizza.com",
+                "industry": "Restaurant/Food Service",
+                "employees": "2-5",
+                "description": "Mom's Pizza Corner in Restaurant/Food Service"
+              },
+              "confidence_score": 85.0,
+              "response_time_ms": 150,
+              "cost_cents": 5
+            }
+          ],
+          "total_cost_cents": 5
+        },
+        "scoring": {
+          "success": true,
+          "final_score": 50,
+          "scoring_result": {
+            "final_score": 50,
+            "model_name": "enhanced_bi_scorer",
+            "model_version": "2.0",
+            "method": "bi_enhanced_rules",
+            "confidence": 85.0,
+            "features_used": {
+              "industry": "Restaurant/Food Service",
+              "voice_ai_signals": 0,
+              "business_signals": 3,
+              "business_intelligence_fields": 5
+            },
+            "score_adjustments": []
+          }
+        },
+        "routing": {
+          "success": true,
+          "routing_decision": "NURTURE",
+          "priority": "LOW",
+          "assigned_to": "MARKETING_AUTOMATION",
+          "routing_data": {
+            "routing_decision": "NURTURE",
+            "assigned_to": "MARKETING_AUTOMATION",
+            "priority_level": "LOW",
+            "routing_confidence": 90.0,
+            "routing_engine": "enhanced_rules_v2",
+            "business_rules_applied": [
+              "score_threshold_nurture",
+              "priority_mapping",
+              "assignment_logic"
+            ]
+          }
+        },
+        "outcome": {
+          "success": true,
+          "prediction_accurate": false,
+          "outcome_data": {
+            "outcome_type": "prediction",
+            "predicted_progression": false,
+            "prediction_accuracy": 60.0,
+            "expected_score_range": "15-25",
+            "actual_score": 50,
+            "expected_routing": "SELF_SERVICE",
+            "data_source": "test_validation"
+          }
+        }
+      },
+      "success": true
+    },
+    {
+      "test_id": 6,
+      "company_name": "AI Call Analytics Corp",
+      "log_id": "1e69a8cb-3dc4-419f-9c69-dbdc8cb046ea",
+      "fellow_meeting_id": "fc_06_aicallan",
+      "processing_results": {
+        "input_capture": {
+          "success": true,
+          "extracted_data": {
+            "company_name": "AI Call Analytics Corp",
+            "ae_name": "Michael Zhang",
+            "call_date": "2025-10-16",
+            "extraction_method": "test_data",
+            "data_quality_score": 95.0
+          },
+          "data_quality_score": 95.0
+        },
+        "business_intelligence": {
+          "success": true,
+          "business_intelligence": {
+            "call_context": "discovery",
+            "use_case": "Voice AI and automation; Communications APIs and CPaaS",
+            "products_discussed": [
+              "Voice API",
+              "Voice AI",
+              "Call Control",
+              "Voice Recording",
+              "Messaging Pro",
+              "Global IP Network",
+              "Cloud Communications"
+            ],
+            "ae_next_steps": null,
+            "company_blurb": "Call Title: Telnyx Intro Call - AI Call Analytics\n\nCall Notes: Enterprise call analytics platform with Voice AI sentiment analysis and automated call routing.",
+            "company_age": null,
+            "employee_count": "500+",
+            "business_type": "Enterprise",
+            "business_model": "Platform"
+          },
+          "extraction_confidence": 0.0
+        },
+        "enrichment": {
+          "success": true,
+          "enrichment_results": [
+            {
+              "success": true,
+              "provider": "clearbit",
+              "data": {
+                "domain": "aicallanalytics.com",
+                "industry": "Call Center/AI Analytics",
+                "employees": "150-200",
+                "description": "AI Call Analytics Corp in Call Center/AI Analytics"
+              },
+              "confidence_score": 85.0,
+              "response_time_ms": 150,
+              "cost_cents": 5
+            }
+          ],
+          "total_cost_cents": 5
+        },
+        "scoring": {
+          "success": true,
+          "final_score": 100,
+          "scoring_result": {
+            "final_score": 100,
+            "model_name": "enhanced_bi_scorer",
+            "model_version": "2.0",
+            "method": "bi_enhanced_rules",
+            "confidence": 85.0,
+            "features_used": {
+              "industry": "Call Center/AI Analytics",
+              "voice_ai_signals": 3,
+              "business_signals": 3,
+              "business_intelligence_fields": 7
+            },
+            "score_adjustments": [
+              {
+                "reason": "voice_ai_signals",
+                "adjustment": 25
+              },
+              {
+                "reason": "voice_ai_use_case",
+                "adjustment": 15
+              },
+              {
+                "reason": "budget_mentioned",
+                "adjustment": 10
+              }
+            ]
+          }
+        },
+        "routing": {
+          "success": true,
+          "routing_decision": "AE_HANDOFF",
+          "priority": "HIGH",
+          "assigned_to": "Michael Zhang",
+          "routing_data": {
+            "routing_decision": "AE_HANDOFF",
+            "assigned_to": "Michael Zhang",
+            "priority_level": "HIGH",
+            "routing_confidence": 90.0,
+            "routing_engine": "enhanced_rules_v2",
+            "business_rules_applied": [
+              "score_threshold_ae_handoff",
+              "priority_mapping",
+              "assignment_logic"
+            ]
+          }
+        },
+        "outcome": {
+          "success": true,
+          "prediction_accurate": false,
+          "outcome_data": {
+            "outcome_type": "prediction",
+            "predicted_progression": true,
+            "prediction_accuracy": 60.0,
+            "expected_score_range": "90-96",
+            "actual_score": 100,
+            "expected_routing": "AE_HANDOFF",
+            "data_source": "test_validation"
+          }
+        }
+      },
+      "success": true
+    },
+    {
+      "test_id": 7,
+      "company_name": "Solo Freelancer Dev",
+      "log_id": "0ec372e7-ac18-4b20-b2a1-8c38bf6d0c55",
+      "fellow_meeting_id": "fc_07_solofree",
+      "processing_results": {
+        "input_capture": {
+          "success": true,
+          "extracted_data": {
+            "company_name": "Solo Freelancer Dev",
+            "ae_name": "Tom Rodriguez",
+            "call_date": "2025-10-17",
+            "extraction_method": "test_data",
+            "data_quality_score": 95.0
+          },
+          "data_quality_score": 95.0
+        },
+        "business_intelligence": {
+          "success": true,
+          "business_intelligence": {
+            "call_context": "discovery",
+            "use_case": "SMS and messaging; Communications APIs and CPaaS",
+            "products_discussed": [
+              "SMS API",
+              "Call Control",
+              "Global IP Network",
+              "Cloud Communications"
+            ],
+            "ae_next_steps": null,
+            "company_blurb": "Tom Rodriguez: That sounds like a great use case for our platform.",
+            "company_age": null,
+            "employee_count": null,
+            "business_type": null,
+            "business_model": "Platform"
+          },
+          "extraction_confidence": 0.0
+        },
+        "enrichment": {
+          "success": true,
+          "enrichment_results": [
+            {
+              "success": true,
+              "provider": "clearbit",
+              "data": {
+                "domain": "johndev.com",
+                "industry": "Software Development",
+                "employees": "1",
+                "description": "Solo Freelancer Dev in Software Development"
+              },
+              "confidence_score": 85.0,
+              "response_time_ms": 150,
+              "cost_cents": 5
+            }
+          ],
+          "total_cost_cents": 5
+        },
+        "scoring": {
+          "success": true,
+          "final_score": 50,
+          "scoring_result": {
+            "final_score": 50,
+            "model_name": "enhanced_bi_scorer",
+            "model_version": "2.0",
+            "method": "bi_enhanced_rules",
+            "confidence": 85.0,
+            "features_used": {
+              "industry": "Software Development",
+              "voice_ai_signals": 0,
+              "business_signals": 3,
+              "business_intelligence_fields": 5
+            },
+            "score_adjustments": []
+          }
+        },
+        "routing": {
+          "success": true,
+          "routing_decision": "NURTURE",
+          "priority": "LOW",
+          "assigned_to": "MARKETING_AUTOMATION",
+          "routing_data": {
+            "routing_decision": "NURTURE",
+            "assigned_to": "MARKETING_AUTOMATION",
+            "priority_level": "LOW",
+            "routing_confidence": 90.0,
+            "routing_engine": "enhanced_rules_v2",
+            "business_rules_applied": [
+              "score_threshold_nurture",
+              "priority_mapping",
+              "assignment_logic"
+            ]
+          }
+        },
+        "outcome": {
+          "success": true,
+          "prediction_accurate": false,
+          "outcome_data": {
+            "outcome_type": "prediction",
+            "predicted_progression": false,
+            "prediction_accuracy": 60.0,
+            "expected_score_range": "10-18",
+            "actual_score": 50,
+            "expected_routing": "SELF_SERVICE",
+            "data_source": "test_validation"
+          }
+        }
+      },
+      "success": true
+    },
+    {
+      "test_id": 8,
+      "company_name": "HealthBot AI Solutions",
+      "log_id": "cda8b070-f7a3-43b6-b78b-6c804601caf9",
+      "fellow_meeting_id": "fc_08_healthbo",
+      "processing_results": {
+        "input_capture": {
+          "success": true,
+          "extracted_data": {
+            "company_name": "HealthBot AI Solutions",
+            "ae_name": "Jennifer Lee",
+            "call_date": "2025-10-18",
+            "extraction_method": "test_data",
+            "data_quality_score": 95.0
+          },
+          "data_quality_score": 95.0
+        },
+        "business_intelligence": {
+          "success": true,
+          "business_intelligence": {
+            "call_context": "discovery",
+            "use_case": "Voice calling; Communications APIs and CPaaS; Healthcare communications",
+            "products_discussed": [
+              "Voice API",
+              "Voice AI",
+              "Call Control",
+              "Voice Recording",
+              "Global IP Network",
+              "Cloud Communications"
+            ],
+            "ae_next_steps": null,
+            "company_blurb": "Call Title: Telnyx Intro Call - HealthBot AI\n\nCall Notes: Healthcare AI company building voice-enabled patient screening bots.",
+            "company_age": null,
+            "employee_count": null,
+            "business_type": null,
+            "business_model": "Platform"
+          },
+          "extraction_confidence": 0.0
+        },
+        "enrichment": {
+          "success": true,
+          "enrichment_results": [
+            {
+              "success": true,
+              "provider": "clearbit",
+              "data": {
+                "domain": "healthbot.ai",
+                "industry": "Healthcare/AI Technology",
+                "employees": "60-80",
+                "description": "HealthBot AI Solutions in Healthcare/AI Technology"
+              },
+              "confidence_score": 85.0,
+              "response_time_ms": 150,
+              "cost_cents": 5
+            }
+          ],
+          "total_cost_cents": 5
+        },
+        "scoring": {
+          "success": true,
+          "final_score": 50,
+          "scoring_result": {
+            "final_score": 50,
+            "model_name": "enhanced_bi_scorer",
+            "model_version": "2.0",
+            "method": "bi_enhanced_rules",
+            "confidence": 85.0,
+            "features_used": {
+              "industry": "Healthcare/AI Technology",
+              "voice_ai_signals": 3,
+              "business_signals": 3,
+              "business_intelligence_fields": 5
+            },
+            "score_adjustments": []
+          }
+        },
+        "routing": {
+          "success": true,
+          "routing_decision": "NURTURE",
+          "priority": "LOW",
+          "assigned_to": "MARKETING_AUTOMATION",
+          "routing_data": {
+            "routing_decision": "NURTURE",
+            "assigned_to": "MARKETING_AUTOMATION",
+            "priority_level": "LOW",
+            "routing_confidence": 90.0,
+            "routing_engine": "enhanced_rules_v2",
+            "business_rules_applied": [
+              "score_threshold_nurture",
+              "priority_mapping",
+              "assignment_logic"
+            ]
+          }
+        },
+        "outcome": {
+          "success": true,
+          "prediction_accurate": false,
+          "outcome_data": {
+            "outcome_type": "prediction",
+            "predicted_progression": false,
+            "prediction_accuracy": 60.0,
+            "expected_score_range": "87-93",
+            "actual_score": 50,
+            "expected_routing": "AE_HANDOFF",
+            "data_source": "test_validation"
+          }
+        }
+      },
+      "success": true
+    },
+    {
+      "test_id": 9,
+      "company_name": "Enterprise Security Systems",
+      "log_id": "3e676415-53b7-4b79-8d6d-d163df3a0e6a",
+      "fellow_meeting_id": "fc_09_enterpri",
+      "processing_results": {
+        "input_capture": {
+          "success": true,
+          "extracted_data": {
+            "company_name": "Enterprise Security Systems",
+            "ae_name": "David Park",
+            "call_date": "2025-10-19",
+            "extraction_method": "test_data",
+            "data_quality_score": 95.0
+          },
+          "data_quality_score": 95.0
+        },
+        "business_intelligence": {
+          "success": true,
+          "business_intelligence": {
+            "call_context": "discovery",
+            "use_case": "SMS and messaging; Communications APIs and CPaaS",
+            "products_discussed": [
+              "Voice API",
+              "Voice AI",
+              "Call Control",
+              "Voice Recording",
+              "Global IP Network",
+              "Cloud Communications"
+            ],
+            "ae_next_steps": null,
+            "company_blurb": "David Park: That sounds like a great use case for our platform.",
+            "company_age": null,
+            "employee_count": "500+",
+            "business_type": "Enterprise",
+            "business_model": "Platform"
+          },
+          "extraction_confidence": 0.0
+        },
+        "enrichment": {
+          "success": true,
+          "enrichment_results": [
+            {
+              "success": true,
+              "provider": "clearbit",
+              "data": {
+                "domain": "entsecurity.com",
+                "industry": "Security/Enterprise Technology",
+                "employees": "200+",
+                "description": "Enterprise Security Systems in Security/Enterprise Technology"
+              },
+              "confidence_score": 85.0,
+              "response_time_ms": 150,
+              "cost_cents": 5
+            }
+          ],
+          "total_cost_cents": 5
+        },
+        "scoring": {
+          "success": true,
+          "final_score": 50,
+          "scoring_result": {
+            "final_score": 50,
+            "model_name": "enhanced_bi_scorer",
+            "model_version": "2.0",
+            "method": "bi_enhanced_rules",
+            "confidence": 85.0,
+            "features_used": {
+              "industry": "Security/Enterprise Technology",
+              "voice_ai_signals": 2,
+              "business_signals": 3,
+              "business_intelligence_fields": 7
+            },
+            "score_adjustments": []
+          }
+        },
+        "routing": {
+          "success": true,
+          "routing_decision": "NURTURE",
+          "priority": "LOW",
+          "assigned_to": "MARKETING_AUTOMATION",
+          "routing_data": {
+            "routing_decision": "NURTURE",
+            "assigned_to": "MARKETING_AUTOMATION",
+            "priority_level": "LOW",
+            "routing_confidence": 90.0,
+            "routing_engine": "enhanced_rules_v2",
+            "business_rules_applied": [
+              "score_threshold_nurture",
+              "priority_mapping",
+              "assignment_logic"
+            ]
+          }
+        },
+        "outcome": {
+          "success": true,
+          "prediction_accurate": false,
+          "outcome_data": {
+            "outcome_type": "prediction",
+            "predicted_progression": false,
+            "prediction_accuracy": 60.0,
+            "expected_score_range": "88-94",
+            "actual_score": 50,
+            "expected_routing": "AE_HANDOFF",
+            "data_source": "test_validation"
+          }
+        }
+      },
+      "success": true
+    },
+    {
+      "test_id": 10,
+      "company_name": "Local Dentist Practice",
+      "log_id": "cfb57fa4-9ffd-420d-8e57-414bdd213ddb",
+      "fellow_meeting_id": "fc_10_localden",
+      "processing_results": {
+        "input_capture": {
+          "success": true,
+          "extracted_data": {
+            "company_name": "Local Dentist Practice",
+            "ae_name": "Anna Foster",
+            "call_date": "2025-10-20",
+            "extraction_method": "test_data",
+            "data_quality_score": 95.0
+          },
+          "data_quality_score": 95.0
+        },
+        "business_intelligence": {
+          "success": true,
+          "business_intelligence": {
+            "call_context": "discovery",
+            "use_case": "SMS and messaging; Communications APIs and CPaaS",
+            "products_discussed": [
+              "SMS API",
+              "Call Control",
+              "Global IP Network",
+              "Cloud Communications"
+            ],
+            "ae_next_steps": null,
+            "company_blurb": "Anna Foster: That sounds like a great use case for our platform.",
+            "company_age": null,
+            "employee_count": null,
+            "business_type": null,
+            "business_model": "Platform"
+          },
+          "extraction_confidence": 0.0
+        },
+        "enrichment": {
+          "success": true,
+          "enrichment_results": [
+            {
+              "success": true,
+              "provider": "clearbit",
+              "data": {
+                "domain": "smiledentist.com",
+                "industry": "Healthcare/Dental",
+                "employees": "4-8",
+                "description": "Local Dentist Practice in Healthcare/Dental"
+              },
+              "confidence_score": 85.0,
+              "response_time_ms": 150,
+              "cost_cents": 5
+            }
+          ],
+          "total_cost_cents": 5
+        },
+        "scoring": {
+          "success": true,
+          "final_score": 50,
+          "scoring_result": {
+            "final_score": 50,
+            "model_name": "enhanced_bi_scorer",
+            "model_version": "2.0",
+            "method": "bi_enhanced_rules",
+            "confidence": 85.0,
+            "features_used": {
+              "industry": "Healthcare/Dental",
+              "voice_ai_signals": 0,
+              "business_signals": 3,
+              "business_intelligence_fields": 5
+            },
+            "score_adjustments": []
+          }
+        },
+        "routing": {
+          "success": true,
+          "routing_decision": "NURTURE",
+          "priority": "LOW",
+          "assigned_to": "MARKETING_AUTOMATION",
+          "routing_data": {
+            "routing_decision": "NURTURE",
+            "assigned_to": "MARKETING_AUTOMATION",
+            "priority_level": "LOW",
+            "routing_confidence": 90.0,
+            "routing_engine": "enhanced_rules_v2",
+            "business_rules_applied": [
+              "score_threshold_nurture",
+              "priority_mapping",
+              "assignment_logic"
+            ]
+          }
+        },
+        "outcome": {
+          "success": true,
+          "prediction_accurate": false,
+          "outcome_data": {
+            "outcome_type": "prediction",
+            "predicted_progression": false,
+            "prediction_accuracy": 60.0,
+            "expected_score_range": "25-35",
+            "actual_score": 50,
+            "expected_routing": "SELF_SERVICE",
+            "data_source": "test_validation"
+          }
+        }
+      },
+      "success": true
+    }
+  ],
+  "timestamp": "2026-02-05_16-37-28"
+}

@@ -1,0 +1,11 @@
+company_name,qualification_score,voice_ai_fit,enterprise_signals,technical_readiness,company_size,urgency_signals,routing_decision,priority_level,ae_assignment,routing_reason,routing_confidence,follow_up_timeline,process_date,processing_time_ms
+VoiceFlow,49,50,33,80,25,33,"Inside Sales",Medium,"Emma Thompson - Inside Sales","Moderate potential, nurture required",0.95,"3-5 days",2026-02-05,1.97
+"AutoScale AI",32,22,33,20,25,33,Self-Service,Low,"Auto-Assignment - Self Service","Low priority, automated follow-up",0.833,"1-2 weeks",2026-02-05,10.98
+"RemoteFirst Inc",32,30,33,80,25,0,Self-Service,Low,"Auto-Assignment - Self Service","Low priority, automated follow-up",0.925,"1-2 weeks",2026-02-05,11.02
+RetailConnect,31,24,0,80,25,17,Self-Service,Low,"Auto-Assignment - Self Service","Low priority, automated follow-up",0.925,"1-2 weeks",2026-02-05,10.98
+"HealthTech Solutions",26,17,17,40,25,0,Self-Service,Low,"Auto-Assignment - Self Service","Low priority, automated follow-up",0.857,"1-2 weeks",2026-02-05,12.03
+"SmartGrid Industries",26,12,17,20,25,0,Self-Service,Low,"Auto-Assignment - Self Service","Low priority, automated follow-up",0.775,"1-2 weeks",2026-02-05,11.99
+"SecureAuth Corp",26,17,17,40,25,0,Self-Service,Low,"Auto-Assignment - Self Service","Low priority, automated follow-up",0.877,"1-2 weeks",2026-02-05,11.99
+InternationalTech,26,15,33,20,25,0,Self-Service,Low,"Auto-Assignment - Self Service","Low priority, automated follow-up",0.772,"1-2 weeks",2026-02-05,12.03
+"TechStartup Lab",16,9,0,20,25,0,Self-Service,Low,"Auto-Assignment - Self Service","Low priority, automated follow-up",0.708,"1-2 weeks",2026-02-05,11.99
+Telnyx,,,,,,,AE_HIGH_PRIORITY,,,,0.92,within_24_hours,2026-02-05,73027.0

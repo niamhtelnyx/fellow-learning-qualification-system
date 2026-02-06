@@ -1,0 +1,38 @@
+[
+  {
+    "test_id": 9,
+    "company_name": "RealEstate AI Connect",
+    "domain": "realestateai.co",
+    "industry": "Real Estate Technology",
+    "employees": "25-35",
+    "call_date": "2025-10-15",
+    "call_title": "Telnyx Intro Call - RealEstate AI Connect",
+    "fellow_call_id": "rE4x9K2mL8",
+    "call_notes": "PropTech startup using AI voice assistants for automated property showing scheduling and lead qualification. Building voice agents that can answer property questions, schedule tours, and pre-qualify buyers. Current MVP ready, seeking voice infrastructure for 500+ real estate agents. $25K initial budget, scaling to $100K+ as they expand to new markets.",
+    "ae_name": "Rachel Martinez", 
+    "urgency_level": 4,
+    "expected_score": "82-88",
+    "expected_routing": "AE_HANDOFF",
+    "voice_ai_signals": ["AI voice assistants", "automated scheduling", "voice agents", "property questions", "lead qualification"],
+    "business_signals": ["500+ agents", "$25K budget", "scaling to $100K", "MVP ready", "new markets"],
+    "transcript_snippet": "[00:45] Rachel Martinez: Thanks for joining today! I understand you're working on voice AI for real estate?\n[01:02] Alex Chen (RealEstate AI): Yes, we're building AI voice assistants that can handle property inquiries and schedule showings automatically. Our agents love it because it qualifies leads before they even visit properties.\n[01:28] Rachel: That sounds like a perfect Voice AI use case. How many agents are you planning to onboard?\n[01:45] Alex: We have 500 agents ready to go, and honestly the voice quality needs to be crystal clear since we're representing million-dollar properties. We're budgeting $25K to start but expect to scale to $100K+ as we expand to new cities."
+  },
+  {
+    "test_id": 10,
+    "company_name": "QuickFix Home Services",
+    "domain": "quickfixhome.net", 
+    "industry": "Home Services/Logistics",
+    "employees": "8-12",
+    "call_date": "2025-10-22",
+    "call_title": "Telnyx Intro Call - QuickFix Home Services",
+    "fellow_call_id": "qF7b3N1pY9",
+    "call_notes": "Regional home repair service company looking for basic SMS appointment reminders and simple automated calling for service confirmations. No AI mentioned, just basic automation needs. Family-owned business, cost-conscious, wants simple integration. Looking to upgrade from their current manual calling process.",
+    "ae_name": "Mark Thompson",
+    "urgency_level": 2, 
+    "expected_score": "35-45",
+    "expected_routing": "SELF_SERVICE",
+    "voice_ai_signals": [],
+    "business_signals": ["regional service", "family-owned", "cost-conscious", "simple integration", "manual process upgrade"],
+    "transcript_snippet": "[00:30] Mark Thompson: Thanks for the call today. Tell me about what you're looking to do with communications.\n[00:48] Jessica Rodriguez (QuickFix): We're a family plumbing and electrical business, been around 15 years. Right now we manually call customers to confirm appointments and it's eating up our office time. We just want simple SMS reminders and maybe some basic calling automation.\n[01:15] Mark: Got it, so more operational efficiency than anything complex?\n[01:22] Jessica: Exactly. Nothing fancy, we just need something affordable that works. Our customers are mostly homeowners who prefer text reminders anyway."
+  }
+]
